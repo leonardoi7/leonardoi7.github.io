@@ -1,118 +1,320 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-     <title>One Page Resume</title>
+    <title>One Page Resume Leonardo</title>
 
-     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
-        .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-     </style>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 16px Helvetica, Sans-Serif;
+            line-height: 24px;
+            background: url(images/noise.jpg);
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #page-wrap {
+            width: 800px;
+            margin: 40px auto 60px;
+        }
+
+        #pic {
+            width: 150px;
+            float: right;
+            margin: -30px 0 0 0;
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            padding: 0 0 16px 0;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: -2px;
+            border-bottom: 1px solid #999;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0 0 6px 0;
+            position: relative;
+        }
+
+        h2 span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-style: italic;
+            font-family: Georgia, Serif;
+            font-size: 16px;
+            color: #999;
+            font-weight: normal;
+        }
+
+        p {
+            margin: 0 0 16px 0;
+        }
+
+        a {
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px dotted #999;
+        }
+
+        a:hover {
+            border-bottom-style: solid;
+            color: black;
+        }
+
+        ul {
+            margin: 0 0 32px 17px;
+        }
+
+        #objective {
+            width: 500px;
+            float: left;
+        }
+
+        #objective p {
+            font-family: Georgia, Serif;
+            font-style: italic;
+            color: #666;
+        }
+
+        dt {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            padding: 0 26px 0 0;
+            width: 150px;
+            float: left;
+            height: 100px;
+            border-right: 1px solid #999;
+        }
+
+        dd {
+            width: 600px;
+            float: right;
+        }
+
+        dd.clear {
+            float: none;
+            margin: 0;
+            height: 15px;
+        }
+
+        body {
+            /* background-color: #f3f3f3; */
+            padding-top: 3em;
+            font-family: Helvetica;
+            font-size: 13px;
+        }
+
+        .page-wrap {
+            padding: 2em;
+            /* background-color: #f3f3f3; */
+            width: 50%;
+            /* margin: 0 auto; */
+        }
+
+        .skill-bar-container {
+            position: relative;
+            width: 100%;
+            border-radius: 4px;
+            background-color: whitesmoke;
+            margin-bottom: 0.5em;
+        }
+
+        .skill-bar-container .skill-bar {
+            display: block;
+            border-radius: 4px;
+            height: 25px;
+        }
+
+        .skill-bar-container .skill-bar.level1 {
+            width: 20%;
+            background-color: #d7edfa;
+        }
+
+        .skill-bar-container .skill-bar.level2 {
+            width: 40%;
+            background-color: #c8e7f8;
+        }
+
+        .skill-bar-container .skill-bar.level3 {
+            width: 60%;
+            background-color: #b9e0f7;
+        }
+
+        .skill-bar-container .skill-bar.level4 {
+            width: 80%;
+            background-color: #a9d9f5;
+        }
+
+        .skill-bar-container .skill-bar.level5 {
+            width: 100%;
+            background-color: #9ad3f3;
+        }
+
+        .skill-bar-container .skill-name {
+            position: absolute;
+            /* top: 5px; */
+            left: 10px;
+            color: #333;
+        }
+
+        .skill-bar-container .skill-percent {
+            position: absolute;
+            /* top: 5px; */
+            right: 10px;
+            color: rgb(83, 83, 83);
+        }
+    </style>
+
 </head>
 
 <body>
 
     <div id="page-wrap">
-    
-        <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
-    
+
+        <img src="images/Terminalicon2.png" alt="Photo of Terminal" id="pic" />
+
         <div id="contact-info" class="vcard">
-        
+
             <!-- Microformats! -->
-        
-            <h1 class="fn">C'thulhu</h1>
-        
+
+            <h1 class="fn">Leonardo Quintero</h1>
+
             <p>
-                Cell: <span class="tel">555-666-7777</span><br />
-                Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
+                <!--Cell: <span class="tel">555-666-7777</span><br /> -->
+                Email: <a class="email" href="mailto:leonardoi7@me.com">leonardoi7@me.com</a>
             </p>
         </div>
-                
+
         <div id="objective">
             <p>
-                I am an outgoing and energetic (ask anybody) young professional, seeking a 
-                career that fits my professional skills, personality, and murderous tendencies. 
-                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
-                I can bring world domination to your organization. 
+                I am a computer science engineer with diverse work experience, including programming and IT. Dedicated to meeting management requirements with innovative solutions who is eager to apply years of IT experience to in an entry-level computer programmer role.
             </p>
         </div>
-        
+
         <div class="clear"></div>
-        
+
         <dl>
             <dd class="clear"></dd>
-            
+
             <dt>Education</dt>
             <dd>
-                <h2>Withering Madness University - Planet Vhoorl</h2>
-                <p><strong>Major:</strong> Public Relations<br />
-                   <strong>Minor:</strong> Scale Tending</p>
+                <h2>UABC Faculty of Engineering</h2>
+                <p><strong> BS Computer Science | Graduated March 2014 </strong> <br /></p>
+                <p>Area of focus: Software Engineering and Network Administration.<br />CENEVAL EGEL Exam Score:
+                    Outstanding</p>
             </dd>
-            
             <dd class="clear"></dd>
-            
+
             <dt>Skills</dt>
             <dd>
+                <!-- <h2>Programming skills</h2>
+                <p>Office and records management, database administration, event organization, customer support, travel
+                    coordination</p> -->
+                <!-- <div class="page-wrap">
+                    <h2>With Divs</h2>
+
+                    <div class="skill-bar-container">
+                        <span class="skill-name">Something</span>
+                        <span class="skill-percent">50%</span>
+                        <span class="skill-bar level3"></span>
+                    </div>
+
+                    <div class="skill-bar-container">
+                        <span class="skill-name">Something</span>
+                        <span class="skill-percent">80%</span>
+                        <span class="skill-bar level4"></span>
+                    </div>
+
+                    <div class="skill-bar-container">
+                        <span class="skill-name">Something</span>
+                        <span class="skill-percent">60%</span>
+                        <span class="skill-bar level3"></span>
+                    </div>
+
+                    <div class="skill-bar-container">
+                        <span class="skill-name">Something</span>
+                        <span class="skill-percent">40%</span>
+                        <span class="skill-bar level2"></span>
+                    </div>
+
+                    <div class="skill-bar-container">
+                        <span class="skill-name">Something</span>
+                        <span class="skill-percent">20%</span>
+                        <span class="skill-bar level1"></span>
+                    </div>
+
+                </div>
+                <br /> -->
+
                 <h2>Office skills</h2>
-                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
-                
+                <p>Office and records management, database administration, event organization, customer support.</p>
+
                 <h2>Computer skills</h2>
-                <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
+                <p>Microsoft productivity software (Word, Excel, etc), Windows</p>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
             <dt>Experience</dt>
             <dd>
-                <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
-                <ul>
-                    <li>Inspired and won highest peasant death competition among servants</li>
-                    <li>Helped coordinate managers to grow cult following</li>
-                    <li>Provided untimely deaths to all who opposed</li>
-                </ul>
-                
-                <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
-                <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
-                </ul> 
+                <h2>System Analyst<span>Kenworth Mexicana | 2018 - Present</span></h2>
+                <p>Analyze, design, develop, and implement custom PACCAR applications. Work with testers and business
+                    teams to triage defects and ensure changes are migrated into productio correctly.</p>
+
+                <h2>IT Manager<span>Consulate of Mexico in San Diego | Feb 2015 - Dec 2017</span></h2>
+                <p>Responsible for the upkeep, configuration, and reliableoperation of client computer systems, servers,
+                    and missioncritical applications. Technical assistance to staff for anysystem related issues.</p>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
+            <dt>Personal Traits</dt>
+            <dd>
+                <ul>
+                    <li>Patient</li>
+                    <li>Self-taught</li>
+                    <li>Teamwork</li>
+                    <li>Assertive</li>
+                    <li>Works under pressure</li>
+                    <li>Attention to detail</li>
+                    <li>Customer Service</li>
+
+                </ul>
+            </dd>
+
+            <dd class="clear"></dd>
+
             <dt>Hobbies</dt>
-            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
-            
+            <dd>Gaming, Reading, Watching Youtube, PC Building</dd>
+
             <dd class="clear"></dd>
-            
+
             <dt>References</dt>
             <dd>Available on request</dd>
-            
+
             <dd class="clear"></dd>
         </dl>
-        
+
         <div class="clear"></div>
-    
+
     </div>
 
 </body>
